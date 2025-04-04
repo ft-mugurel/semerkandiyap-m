@@ -38,18 +38,15 @@
             </ul>
         </div>
     </nav>
-
-    <!-- Mobile Dropdown Menu -->
-    <div id="menu" class="lg:hidden bg-black bg-opacity-75 text-white w-full p-20 hidden">
-        <ul class="space-y-4 text-lg">
-            <li><button onclick="scrollToSection('bio')" class="block hover:text-gray-400">Biyografi</button></li>
-            <li><button onclick="scrollToSection('gayemiz')" class="block hover:text-gray-400">Gayemiz</button></li>
-            <li><button onclick="scrollToSection('fahreddin')" class="block hover:text-gray-400">Fahreddin Paşa</button></li>
-            <li><button onclick="scrollToSection('video')" class="block hover:text-gray-400">Video</button></li>
-            <li><button onclick="scrollToSection('iletisim')" class="block hover:text-gray-400">İletişim</button></li>
-        </ul>
-    </div>
-
+				<div id="menu" class="lg:hidden bg-black bg-opacity-75 text-white w-full  p-6 hidden fixed top-20 left-0">
+						<ul class="space-y-4 text-lg">
+								<li><button onclick="scrollToSection('bio')" class="block hover:text-gray-400">Biyografi</button></li>
+								<li><button onclick="scrollToSection('gayemiz')" class="block hover:text-gray-400">Gayemiz</button></li>
+								<li><button onclick="scrollToSection('fahreddin')" class="block hover:text-gray-400">Fahreddin Paşa</button></li>
+								<li><button onclick="scrollToSection('video')" class="block hover:text-gray-400">Video</button></li>
+								<li><button onclick="scrollToSection('iletisim')" class="block hover:text-gray-400">İletişim</button></li>
+						</ul>
+				</div>
     <div >
         <section id="bio" class="h-screen flex flex-col items-center justify-center bg-cover bg-center text-center px-6" style="background-image: url('assets/images/sinema.jpg');">
             <div class="bg-black bg-opacity-50 p-8 rounded-lg">
