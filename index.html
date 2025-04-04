@@ -5,19 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semerkandi Yapım</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome için doğru link -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script>
         function scrollToSection(id) {
             document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
         }
+
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("hidden");
+        }
     </script>
 </head>
 <body class="bg-gray-900 text-gray-100">
     <nav class="bg-black bg-opacity-75 text-white fixed w-full top-0 shadow-lg z-10 backdrop-blur-md">
-        <div class="container mx-auto flex justify-between items-center p-7">
+        <div class="container mx-auto flex justify-between items-center p-6">
             <div class="text-2xl font-bold">Semerkandi Yapım</div>
-            <ul class="flex space-x-6 text-lg">
+            <!-- Hamburger Icon for Mobile -->
+            <div class="lg:hidden flex items-center">
+                <button onclick="toggleMenu()" class="text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Navbar Links for Large Screens -->
+            <ul class="hidden lg:flex space-x-6 text-lg">
                 <li><button onclick="scrollToSection('bio')" class="hover:text-gray-400">Biyografi</button></li>
                 <li><button onclick="scrollToSection('gayemiz')" class="hover:text-gray-400">Gayemiz</button></li>
                 <li><button onclick="scrollToSection('fahreddin')" class="hover:text-gray-400">Fahreddin Paşa</button></li>
@@ -27,7 +39,18 @@
         </div>
     </nav>
 
-    <div class="mt-20">
+    <!-- Mobile Dropdown Menu -->
+    <div id="menu" class="lg:hidden bg-black bg-opacity-75 text-white w-full p-20 hidden">
+        <ul class="space-y-4 text-lg">
+            <li><button onclick="scrollToSection('bio')" class="block hover:text-gray-400">Biyografi</button></li>
+            <li><button onclick="scrollToSection('gayemiz')" class="block hover:text-gray-400">Gayemiz</button></li>
+            <li><button onclick="scrollToSection('fahreddin')" class="block hover:text-gray-400">Fahreddin Paşa</button></li>
+            <li><button onclick="scrollToSection('video')" class="block hover:text-gray-400">Video</button></li>
+            <li><button onclick="scrollToSection('iletisim')" class="block hover:text-gray-400">İletişim</button></li>
+        </ul>
+    </div>
+
+    <div >
         <section id="bio" class="h-screen flex flex-col items-center justify-center bg-cover bg-center text-center px-6" style="background-image: url('assets/images/sinema.jpg');">
             <div class="bg-black bg-opacity-50 p-8 rounded-lg">
                 <h2 class="text-4xl font-bold mb-4 text-white">Biyografi</h2>
