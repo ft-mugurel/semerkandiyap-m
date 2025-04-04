@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semerkandi Yapım</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- FontAwesome için -->
+    <!-- Font Awesome için doğru link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script>
         function scrollToSection(id) {
             document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
@@ -14,7 +15,7 @@
 </head>
 <body class="bg-gray-900 text-gray-100">
     <nav class="bg-black bg-opacity-75 text-white fixed w-full top-0 shadow-lg z-10 backdrop-blur-md">
-        <div class="container mx-auto flex justify-between items-center p-4">
+        <div class="container mx-auto flex justify-between items-center p-7">
             <div class="text-2xl font-bold">Semerkandi Yapım</div>
             <ul class="flex space-x-6 text-lg">
                 <li><button onclick="scrollToSection('bio')" class="hover:text-gray-400">Biyografi</button></li>
@@ -27,36 +28,36 @@
     </nav>
 
     <div class="mt-20">
-        <section id="bio" class="h-screen flex flex-col items-center justify-center bg-cover bg-center text-center px-6" style="background-image: url('bio.jpg');">
+        <section id="bio" class="h-screen flex flex-col items-center justify-center bg-cover bg-center text-center px-6" style="background-image: url('assets/images/sinema.jpg');">
             <div class="bg-black bg-opacity-50 p-8 rounded-lg">
                 <h2 class="text-4xl font-bold mb-4 text-white">Biyografi</h2>
                 <p class="max-w-2xl text-lg text-gray-200">Semerkandi Yapım, kaliteli ve etkileyici filmler üretmeyi amaçlayan bir yapım şirketidir. Sanatın gücünü kullanarak hikayeler anlatıyoruz.</p>
             </div>
         </section>
-        <section id="gayemiz" class="h-screen flex flex-col items-center justify-center bg-cover bg-center text-center px-6" style="background-image: url('gayemiz.jpg');">
+        <section id="gayemiz" class="h-screen flex flex-col items-center justify-center bg-cover bg-center text-center px-6" style="background-image: url('assets/images/film.jpg');">
             <div class="bg-black bg-opacity-50 p-8 rounded-lg">
                 <h2 class="text-4xl font-bold mb-4 text-white">Gayemiz</h2>
                 <p class="max-w-2xl text-lg text-gray-200">Amacımız, tarihten ilham alarak güçlü ve anlamlı yapımlar üretmek. Sinema sanatını kullanarak kültürel mirasımızı yaşatmak istiyoruz.</p>
             </div>
         </section>
-        <section id="fahreddin" class="h-screen flex flex-col items-center justify-center bg-cover bg-center text-center px-6" style="background-image: url('fahreddin.jpg');">
+        <section id="fahreddin" class="h-screen flex flex-col items-center justify-center bg-cover bg-center text-center px-6" style="background-image: url('assets/images/film2.jpg');">
             <div class="bg-black bg-opacity-50 p-8 rounded-lg">
                 <h2 class="text-4xl font-bold mb-4 text-white">Fahreddin Paşa</h2>
                 <p class="max-w-2xl text-lg text-gray-200">Fahreddin Paşa'nın kahramanlık dolu hikayesini anlatan özel projelerimiz ile geçmişe ışık tutuyoruz.</p>
             </div>
         </section>
-        <section id="video" class="h-screen flex flex-col items-center justify-center bg-cover bg-center text-center px-6" style="background-image: url('video.jpg');">
+        <section id="video" class="h-screen flex flex-col items-center justify-center bg-cover bg-center text-center px-6" style="background-image: url('assets/images/sinema2.jpg');">
             <div class="bg-black bg-opacity-50 p-8 rounded-lg">
                 <h2 class="text-4xl font-bold mb-4 text-white">Video</h2>
                 <div class="w-full max-w-4xl">
                     <video class="w-full h-[500px] md:h-[700px] rounded-lg" controls>
-                        <source src="video.mp4" type="video/mp4">
+                        <source src="assets/video.mp4" type="video/mp4">
                         Tarayıcınız video etiketini desteklemiyor.
                     </video>
                 </div>
             </div>
         </section>
-        <section id="iletisim" class="h-screen flex flex-col items-center justify-center bg-cover bg-center text-center px-6" style="background-image: url('iletisim.jpg');">
+        <section id="iletisim" class="h-screen flex flex-col items-center justify-center bg-cover bg-center text-center px-6" style="background-image: url('assets/images/kodak.jpg');">
             <div class="bg-black bg-opacity-50 p-8 rounded-lg">
                 <h2 class="text-4xl font-bold mb-4 text-white">İletişim</h2>
                 <p class="max-w-2xl text-lg text-gray-200">Bize ulaşmak için aşağıdaki formu kullanabilir veya doğrudan iletişim bilgilerimizden bize ulaşabilirsiniz.</p>
@@ -68,9 +69,9 @@
                 </div>
                 
                 <form action="mailto:info@semerkandiyapim.com" method="post" enctype="text/plain" class="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg mt-6 w-full max-w-md mx-auto">
-                    <input type="text" name="Ad" placeholder="Adınız" class="w-full p-3 mb-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    <input type="email" name="Email" placeholder="E-posta" class="w-full p-3 mb-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    <textarea name="Mesaj" placeholder="Mesajınız" class="w-full p-3 mb-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    <input type="text" name="Ad" placeholder="Adınız" class="text-black w-full p-3 mb-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="email" name="Email" placeholder="E-posta" class="text-black w-full p-3 mb-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <textarea name="Mesaj" placeholder="Mesajınız" class="w-full text-black p-3 mb-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
                     <button type="submit" class="w-full bg-blue-700 text-white p-3 rounded-lg hover:bg-blue-500">Gönder</button>
                 </form>
 
@@ -87,7 +88,7 @@
         </section>
     </div>
 
-    <footer class="bg-black bg-opacity-75 text-white text-center p-6 mt-8">
+    <footer class="bg-black bg-opacity-75 text-white text-center p-6 ">
         &copy; 2025 Semerkandi Yapım. Tüm hakları saklıdır.
     </footer>
 </body>
